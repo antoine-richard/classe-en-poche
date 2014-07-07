@@ -1,1 +1,2 @@
-[![Build Status](https://secure.travis-ci.org/antoine-richard/classe-en-poche.png?branch=master)](https://travis-ci.org/antoine-richard/classe-en-poche)
+[![Build Status](https://secure.travis-ci.org/antoine-richard/classe-en-poche.png?branch=master)](https://travis-ci.org/antoine-richard/classe-en-poche) 
+[![devDependency Status](https://david-dm.org/antoine-richard/classe-en-poche/dev-status.png)](https://david-dm.org/antoine-richard/classe-en-poche#info=devDependencies)
