@@ -1,1 +1,1 @@
-[![Build Status](https://secure.travis-ci.org/username/reponame.png?branch=master)](https://travis-ci.org/username/reponame)
+[![Build Status](https://secure.travis-ci.org/antoine-richard/classe-en-poche.png?branch=master)](https://travis-ci.org/antoine-richard/classe-en-poche)
