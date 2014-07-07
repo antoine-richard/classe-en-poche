@@ -1,0 +1,6 @@
+{
+  "name": "classe-en-poche",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  }
+}
