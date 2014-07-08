@@ -1,13 +1,18 @@
 {
   "name": "classe-en-poche",
   "version": "0.1.0",
-  "devDependencies": {
-    "node-sass": "~0.7.0",
-    "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-sass": "~0.8.0"
+  "author": {
+    "name": "Antoine Richard"
+  },
+  "dependencies": {
+    "express": "~4.5.1",
+    "morgan": "~1.1.1",
+    "serve-favicon": "~2.0.1"
+  },
+  "engines": {
+    "node": "0.10.x"
   },
   "scripts": {
-      "test": "grunt sass"
+    "start": "node server/app.js"
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name": "classe-en-poche",
+  "version": "0.1.0",
+  "author": {
+    "name": "Antoine Richard"
+  },
+  "devDependencies": {
+    "node-sass": "~0.7.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.8.0"
+  },
+  "scripts": {
+      "test": "grunt sass"
+  }
+}
