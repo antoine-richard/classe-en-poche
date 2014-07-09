@@ -16,6 +16,17 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: ["dist"],
+
+    copy: {
+      main: {
+        files: [
+          { expand: true, cwd: 'client/src/', src: ['index.html'], dest: 'client/dist/' },
+          { expand: true, cwd: 'client/src/', src: ['images/**'], dest: 'client/dist/' }
+        ]
+      }
+    },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
@@ -28,7 +39,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['clean', 'sass', 'copy']);
   grunt.registerTask('default', ['build','watch']);
 }

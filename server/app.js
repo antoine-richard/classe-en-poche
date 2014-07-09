@@ -7,7 +7,11 @@ var express = require('express')
 app.use(morgan('short'));
 app.use(favicon(__dirname + '/../client/src/images/favicon.ico'));
 
-app.use(express.static('client/src'));
+if ('production' == process.env.NODE_ENV) {
+  app.use(express.static('client/dist'));
+} else {
+  app.use(express.static('client/src'));
+}
 
 app.listen(port, function() {
   console.log('classe-en-poche server listening on port ' + port);

@@ -2,8 +2,7 @@ language: node_js
 node_js:
 - '0.10'
 before_install:
-- npm install -g grunt-cli
-- npm install -g bower
+- npm install -g grunt-cli bower
 - bower install
 deploy:
   provider: heroku
@@ -11,3 +10,4 @@ deploy:
   api_key:
     secure: b6epJKRjHTuFz+Oxm1riFaip2EYH+c+dvIX6He+BHzuT64Jy1PE54XBvX2Dg+7+YJq12slk5fSM1JUbNKUREqYbm8X9MFpZd3h0HS8pUZDQ95larZWUoSn7eM9J1RhhB4sIuetTm0JDhK/sYprdDEfuALyAGrsStfQ6HL9rK/fY=
   app: classe-en-poche
+  skip_cleanup: true
