@@ -1,3 +1,6 @@
 *.DS_Store
 node_modules
 npm-debug.log
+client/src/bower_components
+client/src/css
+client/dist
