@@ -5,16 +5,24 @@ var express = require('express')
   , port    = process.env.PORT || 3000;
 
 app.use(morgan('short'));
-app.use(favicon(__dirname + '/../client/src/images/favicon.ico'));
-
-console.log('###');
-console.log(process.env.NODE_ENV);
-console.log('###');
 
 if ('development' == process.env.NODE_ENV) {
   app.use(express.static('client/src'));
+  app.use(favicon(__dirname + '/../client/src/images/favicon.ico'));
 } else {
   app.use(express.static('client/dist'));
+  app.use(favicon(__dirname + '/../client/dist/images/favicon.ico'));
+}
+
+//  testing...
+if (require('fs').existsSync(__dirname + '/../client/src/images/favicon.ico')) {
+  console.log("###");
+  console.log("FILE EXISTS");
+  console.log("###");
+} else {
+  console.log("###");
+  console.log("FILE DOESN'T EXIST");
+  console.log("###");
 }
 
 app.listen(port, function() {

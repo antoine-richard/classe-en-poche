@@ -16,13 +16,13 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ["dist"],
+    clean: ["client/dist"],
 
     copy: {
       main: {
         files: [
           { expand: true, cwd: 'client/src/', src: ['index.html'], dest: 'client/dist/' },
-          { expand: true, cwd: 'client/src/', src: ['images/**'], dest: 'client/dist/' }
+          { expand: true, cwd: 'client/src/', src: ['images/**', 'css/**', 'js/**'], dest: 'client/dist/' }
         ]
       }
     },
