@@ -22,7 +22,18 @@ module.exports = function(grunt) {
       main: {
         files: [
           { expand: true, cwd: 'client/src/', src: ['index.html'], dest: 'client/dist/' },
-          { expand: true, cwd: 'client/src/', src: ['images/**', 'css/**', 'js/**'], dest: 'client/dist/' }
+          { expand: true, cwd: 'client/src/', src: ['images/**', 'css/**', 'js/**'], dest: 'client/dist/' },
+          { /* temp */ 
+            expand: true, 
+            cwd: 'client/src/', 
+            src: [
+              'bower_components/modernizr/modernizr.js', 
+              'bower_components/foundation/js/foundation.min.js',
+              'bower_components/jquery/dist/jquery.min.js',
+              'bower_components/jquery/dist/jquery.min.map'
+            ], 
+            dest: 'client/dist/' 
+          }
         ]
       }
     },
