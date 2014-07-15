@@ -30,7 +30,9 @@ module.exports = function(grunt) {
               'bower_components/modernizr/modernizr.js', 
               'bower_components/foundation/js/foundation.min.js',
               'bower_components/jquery/dist/jquery.min.js',
-              'bower_components/jquery/dist/jquery.min.map'
+              'bower_components/jquery/dist/jquery.min.map',
+              'bower_components/fastclick/lib/fastclick.js',
+              'robots.txt'
             ], 
             dest: 'client/dist/' 
           }
@@ -54,5 +56,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('build', ['clean', 'sass', 'copy']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build', 'watch']);
 }
