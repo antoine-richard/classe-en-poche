@@ -9,5 +9,7 @@ deploy:
   buildpack: nodejs
   api_key:
     secure: b6epJKRjHTuFz+Oxm1riFaip2EYH+c+dvIX6He+BHzuT64Jy1PE54XBvX2Dg+7+YJq12slk5fSM1JUbNKUREqYbm8X9MFpZd3h0HS8pUZDQ95larZWUoSn7eM9J1RhhB4sIuetTm0JDhK/sYprdDEfuALyAGrsStfQ6HL9rK/fY=
-  app: classe-en-poche
+  app:
+    master: classe-en-poche
+    dev:    classe-en-poche-dev
   skip_cleanup: true
