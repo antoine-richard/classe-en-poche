@@ -1,10 +1,12 @@
-var express = require('express')
-  , morgan  = require('morgan')
-  ,	favicon = require('serve-favicon')
-  , app     = express()
-  , port    = process.env.PORT || 3000;
+var express     = require('express')
+  , morgan      = require('morgan')
+  ,	favicon     = require('serve-favicon')
+  , compression = require('compression')
+  , app         = express()
+  , port        = process.env.PORT || 3000;
 
 app.use(morgan('short'));
+app.use(compression());
 
 if ('development' == process.env.NODE_ENV) {
   app.use(express.static('client/src'));
