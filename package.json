@@ -16,10 +16,12 @@
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-sass": "~0.14.0",
+    "gulp": "^3.8.7",
+    "gulp-sass": "^0.7.2",
     "node-sass": "~0.9.3"
   },
   "engines": {
-    "node": "^0.10.30"
+    "node": "~0.10.30"
   },
   "scripts": {
     "test": "grunt build",
